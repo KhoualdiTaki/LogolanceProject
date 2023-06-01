@@ -1,0 +1,25 @@
+<!-- Sign In Start -->
+<div class="container-fluid">
+    <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="col-12 col-sm-8">
+            <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h6>Ajout de paiement</h6>
+                </div>
+                <form method="post" action="core/paiement/ajouter.php">
+                    <input type="hidden" class="form-control" name="postulatID" id="floatingPostulat" placeholder="ID du postulat">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="montantPaiement" id="floatingMontant" placeholder="Montant du paiement">
+                        <label for="floatingMontant">Montant du paiement</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="monnaiePaiement" id="floatingMonnaie" placeholder="Monnaie du paiement">
+                        <label for="floatingMonnaie">Monnaie du paiement</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Ajouter</button>
+                </form>                        
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sign In End -->
